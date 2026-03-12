@@ -1,0 +1,18 @@
+.static-page { padding: 120px 0 80px; }
+.static-page .container-narrow { max-width: 720px; }
+.static-page h1 { font-size: 36px; font-weight: 400; margin-bottom: 8px; color: var(--text-primary); }
+.static-page .page-subtitle { font-size: 15px; color: var(--text-muted); margin-bottom: 48px; }
+.static-page h2 { font-size: 18px; font-weight: 700; color: var(--text-primary); margin-top: 36px; margin-bottom: 12px; }
+.static-page p, .static-page li { font-size: 14.5px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px; }
+.static-page ul { padding-left: 20px; margin-bottom: 16px; }
+.static-page li { margin-bottom: 6px; }
+.faq-item { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+.faq-question { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 16px 20px; font-size: 14.5px; font-weight: 600; color: var(--text-primary); text-align: left; background: none; border: none; cursor: pointer; transition: background 0.2s ease; }
+.faq-question:hover { background: var(--off-white); }
+.faq-arrow { font-size: 12px; color: var(--text-muted); transition: transform 0.2s ease; }
+.faq-arrow.open { transform: rotate(180deg); }
+.faq-answer { padding: 0 20px 16px; font-size: 13.5px; color: var(--text-secondary); line-height: 1.7; }
+.contact-form { margin-top: 32px; }
+.contact-form .btn { margin-top: 8px; }
+.contact-info { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--border); }
+.contact-info p { font-size: 14px; }
