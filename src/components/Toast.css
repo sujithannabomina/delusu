@@ -1,0 +1,56 @@
+/* FILE: Toast.css */
+/* PATH: C:\Users\devav\Desktop\Projects\Delesu\src\components\Toast.css */
+ 
+.toast {
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease;
+  max-width: 400px;
+}
+ 
+.toast--success { border-left: 4px solid var(--success); }
+.toast--error { border-left: 4px solid var(--error); }
+.toast--info { border-left: 4px solid var(--blue); }
+ 
+.toast-icon {
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+ 
+.toast--success .toast-icon { color: var(--success); }
+.toast--error .toast-icon { color: var(--error); }
+.toast--info .toast-icon { color: var(--blue); }
+ 
+.toast-message {
+  font-size: 13.5px;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+ 
+.toast-close {
+  font-size: 18px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.toast-close:hover {
+  color: var(--text-primary);
+}
+ 
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
